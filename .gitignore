@@ -12,6 +12,7 @@ platform_dist
 dist
 dist-ssr
 *.local
+public/generated
 
 
 # Editor directories and files

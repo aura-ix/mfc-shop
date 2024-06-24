@@ -1,5 +1,11 @@
 #!/bin/sh
 
+rm -rf public/generated
+mkdir public/generated
+
+convert -resize 48 art/logo.png public/generated/logo48.png
+convert -resize 128 art/logo.png public/generated/logo128.png
+
 rm -rf platform_dist
 mkdir platform_dist
 

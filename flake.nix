@@ -18,10 +18,10 @@
     devShells = eachSystem (pkgs: {
       default = pkgs.mkShell {
         buildInputs = [
+          pkgs.imagemagick
+
           pkgs.nodejs
-
           pkgs.nodePackages.pnpm
-
           pkgs.nodePackages.typescript
           pkgs.nodePackages.typescript-language-server
         ];

@@ -1,6 +1,5 @@
 
 // TODO: live test cases against MFC
-// TODO: test cases
 // title: https://myfigurecollection.net/item/1147
 // multiple origins: https://myfigurecollection.net/item/1333840
 // multiple companies: https://myfigurecollection.net/item/520673
