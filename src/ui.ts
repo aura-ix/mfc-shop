@@ -1,5 +1,6 @@
 import { merchants } from "./merchants";
 import { Terms } from "./scrape";
+import { logoIconURL } from "./assets";
 
 const categorySortOrder = [
     'Category',
@@ -64,6 +65,17 @@ const termStyle = `
 }
 .mfc-shop-help p {
     margin-top: 1em;
+}
+.mfc-shop-header {
+    display: flex;
+    align-items: center;
+}
+.mfc-shop-header img {
+    height: 2.5em;
+    margin-left: 1em;
+}
+.mfc-shop-header h2 {
+    padding-left: .5em;
 }
 `;
 
@@ -286,7 +298,10 @@ export function addShopSection(termMap: Terms) {
     const merchantSection = createMerchantSection(querySection.getQuery);
     const termSection = createTermSection(termMap, querySection.addTerm);
     const shopSection = E('section', {}, [
-        E('h2', {}, ['Shop']),
+        E('div', {className: 'mfc-shop-header'}, [
+            E('img', {src: logoIconURL}, []),
+            E('h2', {}, ['Shop']),
+        ]),
         E('div', {className: 'object-description'}, [
             ...querySection.tree,
             ...merchantSection,

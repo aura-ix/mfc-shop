@@ -15,3 +15,5 @@ function getAssetURL(url: string) {
 
 import neokyoIconPath from './neokyo.png';
 export const neokyoIconURL = getAssetURL(neokyoIconPath);
+import logoIconPath from './logo.png';
+export const logoIconURL = getAssetURL(logoIconPath);
