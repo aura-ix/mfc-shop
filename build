@@ -1,0 +1,10 @@
+#!/bin/sh
+
+rm -rf platform_dist
+mkdir platform_dist
+
+VITE_PLATFORM=chrome pnpm build &
+VITE_PLATFORM=firefox pnpm build &
+VITE_PLATFORM=userscript pnpm build &
+
+wait
