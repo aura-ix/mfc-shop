@@ -18,6 +18,7 @@
     devShells = eachSystem (pkgs: {
       default = pkgs.mkShell {
         buildInputs = [
+          pkgs.zip
           pkgs.imagemagick
 
           pkgs.nodejs

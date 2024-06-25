@@ -9,8 +9,15 @@ convert -resize 128 art/logo.png public/generated/logo128.png
 rm -rf platform_dist
 mkdir platform_dist
 
-VITE_PLATFORM=chrome pnpm build &
-VITE_PLATFORM=firefox pnpm build &
+# $1 = platform
+build_webext() {
+    VITE_PLATFORM="$1" pnpm build && \
+    cd "platform_dist/$1/" && \
+    zip -r "../$1-mfc-shopper.zip" *
+}
+
+build_webext firefox &
+build_webext chrome &
 VITE_PLATFORM=userscript pnpm build &
 
 wait

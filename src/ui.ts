@@ -80,8 +80,7 @@ const termStyle = `
 `;
 
 const helpParagraphs = [
-// TODO: change name here, and provide link
-`Shop functionality is provided by the MFC-Shop extension, and is not an
+`Shop functionality is provided by the MFC Shopper extension, and is not an
 official part of MFC.`,
 
 `This extension is designed to make it easier to search Japanese marketplaces 

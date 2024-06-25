@@ -1,4 +1,3 @@
-// TODO: set up linter
 import { scrapeTerms } from './scrape.js';
 import { addShopSection, addStyles } from './ui.js';
 
