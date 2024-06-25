@@ -26,3 +26,6 @@ After a build has succeeded, the following output files are created:
 - `platform_dist/chrome-mfc-shopper.zip` (chrome extension)
 - `platform_dist/firefox-mfc-shopper.zip` (firefox extension)
 - `platform_dist/userscript/main.js` (userscript, WIP)
+
+# Credits
+MFC Shopper logo was created by [neoratz](https://neoratz.neocities.org/)

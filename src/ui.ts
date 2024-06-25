@@ -308,7 +308,11 @@ export function addShopSection(termMap: Terms) {
             E('hr', {}, []),
             E('details', {className: 'mfc-shop-help'}, [
                 E('summary', {}, ['Information/Help']),
-                ...helpParagraphs.map(text => E('p', {}, [text]))
+                ...helpParagraphs.map(text => E('p', {}, [text])),
+                E('p', {}, [
+                    'MFC Shopper logo was created by ',
+                    E('a', {href: 'https://neoratz.neocities.org/'}, ['neoratz'])
+                ])
             ]),
         ])
     ]);
